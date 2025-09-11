@@ -1,0 +1,16 @@
+# Required: Set the GCP project ID and project number where these resources should be deployed.
+# See https://cloud.google.com/resource-manager/docs/creating-managing-projects#identifying_projects
+# for where to look up your project ID and number.
+project_id = "your-gcp-project-id"
+project_number = "your-gcp-project-number"
+
+# Required: Set Metronome-provided identifiers
+# See https://docs.metronome.com/invoice-customers/solutions/marketplaces/invoice-gcp/
+# for where to look up these values in Metronome
+metronome_service_account_id = "your-metronome-service-account-id"
+metronome_aws_account_id = "metronome-aws-account-id"
+metronome_aws_role_name = "MetronomeAWSRoleName"
+
+# Optional: Customize naming
+# identifier_prefix   = "our-naming-convention"
+# display_name_prefix = "Our Naming Convention"
