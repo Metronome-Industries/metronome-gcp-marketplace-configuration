@@ -1,5 +1,8 @@
 # Metronome GCP Marketplace Integration
 
+> [!NOTE]
+> This feature is coming soon! To get notified as soon as our GCP Marketplace integration is ready, reach out to your Metronome Representative.
+
 This repository offers several configuration methods for deploying the necessary Google Cloud Platform (GCP) infrastructure to enable Metronome to meter usage for GCP Marketplace listings. It creates a Workload Identity Federation (WIF) configuration that allows Metronome's AWS-based metering service to securely access your GCP project and report usage data.
 
 ## Features
@@ -50,7 +53,7 @@ module "metronome_gcp_marketplace_metering" {
   project_number               = "your-gcp-project-number"
 
   # Required: Set Metronome-provided identifiers
-  # See https://docs.metronome.com/invoice-customers/solutions/marketplaces/invoice-gcp/
+  # See https://docs.metronome.com/integrations/marketplace-integrations/gcp
   # for where to look up these values in Metronome
   metronome_service_account_id = "your-metronome-service-account-id"
   metronome_aws_account_id     = "metronome-aws-account-id"
@@ -67,7 +70,7 @@ module "metronome_gcp_marketplace_metering" {
 The Terraform module accepts the following inputs. You will need to supply identifiers from your GCP project as well as identifiers from Metronome.
 
 **GCP Project Identifiers**: See [GCP Documentation](https://cloud.google.com/resource-manager/docs/creating-managing-projects#identifying_projects) for where to look up your project ID and number.
-**Metronome Identifiers**: See [Metronome Documentation](https://docs.metronome.com/invoice-customers/solutions/marketplaces/invoice-gcp/) for where to look up the Metronome-provided identifiers.
+**Metronome Identifiers**: See [Metronome Documentation](https://docs.metronome.com/integrations/marketplace-integrations/gcp) for where to look up the Metronome-provided identifiers.
 
 | Name                         | Description                                   | Type     | Default                       | Required |
 | ---------------------------- | --------------------------------------------- | -------- | ----------------------------- | :------: |

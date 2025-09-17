@@ -40,7 +40,7 @@ gcloud config set project $GCP_PROJECT_ID
 
 #### Required: Set Metronome-provided Identifiers
 
-Metronome will be accessing GCP APIs on your behalf to report usage. Metronome's AWS Account therefore needs to be granted access to the appropriate APIs via WIF + Service Account configuration. The following identifiers are provided by Metronome via the GCP Marketplace integration setup and will need to be set as environment variables (refer to [Metronome Documentation](https://docs.metronome.com/invoice-customers/solutions/marketplaces/invoice-gcp/) for more information about setting these values):
+Metronome will be accessing GCP APIs on your behalf to report usage. Metronome's AWS Account therefore needs to be granted access to the appropriate APIs via WIF + Service Account configuration. The following identifiers are provided by Metronome via the GCP Marketplace integration setup and will need to be set as environment variables (refer to [Metronome Documentation](https://docs.metronome.com/integrations/marketplace-integrations/gcp) for more information about setting these values):
 
 ```bash
 # Get these values from Metronome
