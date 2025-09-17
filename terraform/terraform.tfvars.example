@@ -5,7 +5,7 @@ project_id = "your-gcp-project-id"
 project_number = "your-gcp-project-number"
 
 # Required: Set Metronome-provided identifiers
-# See https://docs.metronome.com/invoice-customers/solutions/marketplaces/invoice-gcp/
+# See https://docs.metronome.com/integrations/marketplace-integrations/gcp
 # for where to look up these values in Metronome
 metronome_service_account_id = "your-metronome-service-account-id"
 metronome_aws_account_id = "metronome-aws-account-id"
