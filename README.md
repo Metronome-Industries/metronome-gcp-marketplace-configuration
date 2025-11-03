@@ -1,8 +1,5 @@
 # Metronome GCP Marketplace Integration
 
-> [!NOTE]
-> This feature is coming soon! To get notified as soon as our GCP Marketplace integration is ready, reach out to your Metronome Representative.
-
 This repository offers several configuration methods for deploying the necessary Google Cloud Platform (GCP) infrastructure to enable Metronome to meter usage for GCP Marketplace listings. It creates a Workload Identity Federation (WIF) configuration that allows Metronome's AWS-based metering service to securely access your GCP project and report usage data.
 
 ## Features

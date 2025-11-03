@@ -180,12 +180,6 @@ gcloud iam workload-identity-pools providers describe "${GCP_IDENTIFIER_PREFIX}-
 # Check Service Account
 gcloud iam service-accounts describe "${METRONOME_SERVICE_ACCOUNT_ID}@${GCP_PROJECT_ID}.iam.gserviceaccount.com"
 
-# Check permissions bound to the Service Account
-gcloud projects get-iam-policy "${GCP_PROJECT_ID}" \
-  --flatten="bindings[].members" \
-  --format='table(bindings.role)' \
-  --filter="bindings.members:${METRONOME_SERVICE_ACCOUNT_ID}@${GCP_PROJECT_ID}.iam.gserviceaccount.com"
-
 # Check Service Account bound to the WIF principal
 gcloud iam service-accounts get-iam-policy "${METRONOME_SERVICE_ACCOUNT_ID}@${GCP_PROJECT_ID}.iam.gserviceaccount.com" \
   --flatten="bindings[].members" \
